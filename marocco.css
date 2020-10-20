@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(255, 76, 0, 0.700717787114846) 0%, rgb(172, 92, 0) 100%);
+    font-family: 'Sora', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background: linear-gradient(180deg, rgba(255, 76, 0, 0.4) 0%, rgb(172, 92, 0) 100%);
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 3rem;
+    font-size: 40px;
+    font-family: 'Sora', sans-serif;
+}
+
+nav a.aktuell {
+    font-weight: bolder;
+    color: black;
+    font-size: 50px;
+}
+
+.bg-image {
+    background-image: url(maroccoImages/header.jpg);
+    background-size: cover;
+}
+
+.bg-color {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    display: flex;
+    min-height: 50vh;
+    background-color: rgba(54, 33, 33, 0.308);
+    justify-content: center;
+    align-items: center;
+}
+
+body div div h1 {
+    font-family: 'Sora', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+span {
+    background-color: rgb(255, 102, 0);
+    padding: 5px 25px;
+}
+
+.firstImage {
+    height: 60vh;
+    box-shadow: 9px 9px 15px 1px #423f3f;
+    object-fit: contain;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+div.first {
+    display: flex;
+}
+
+div.firstText h1,
+p {
+    margin-left: 80px;
+    color: rgb(0, 0, 0);
+    font-size: 55px;
+    font-family: 'Sora', sans-serif;
+}
+
+div.firstText h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* line */
+
+hr.line {
+    border: 3px solid rgb(0, 0, 0);
+}
+
+
+/* second part */
+
+div.second {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+div.second div.firstText {
+    margin-right: 15px;
+}
+
+div.second img.firstImage {
+    box-shadow: -9px 9px 15px 1px #423f3f;
+}
+
+
+/* third part */
+
+.third img {
+    margin-top: 20px;
+}
+
+
+/* footer part */
+
+div.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.aboutUs h1 {
+    text-align: center;
+}
+
+.aboutUs p {
+    max-width: 1000px;
+}
+
+.media h1 {
+    text-align: center;
+}
+
+.media img {
+    width: 80px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+label {
+    font-size: 30px;
+    color: white;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+@media print {
+    img {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}
